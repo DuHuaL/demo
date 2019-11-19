@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     购物车：<br>
-    <num :count="value"></num>
+    <num :count="value" @numberchange="numchange"></num>
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
     return {
       value: 1
     };
+  },
+  methods: {
+    numchange() {
+      console.log(11);
+    }
   }
 };
 </script>
