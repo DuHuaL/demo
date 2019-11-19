@@ -23,5 +23,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ### 父组件给子组件传值
 
-一 在子组件中加入props: ['count'] 属性，并绑定到页面中的相应位置
-二 父组件传值 <num :count="value"></num>
+### 一 在子组件中加入props: ['count'] 属性，并绑定到页面中的相应位置
+### 二 父组件传值 <num :count="value"></num>
