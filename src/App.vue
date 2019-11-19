@@ -2,6 +2,7 @@
   <div id="app">
     购物车：<br>
     <num :count="value" @numberchange="numchange"></num>
+    {{value}}
   </div>
 </template>
 
@@ -18,8 +19,8 @@ export default {
     };
   },
   methods: {
-    numchange() {
-      console.log(11);
+    numchange(num) {
+      this.value = num;
     }
   }
 };
